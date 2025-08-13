@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".riwayat"
+    android:background="#FFFFFF">
+
+    <!-- Judul "Data Laporan" -->
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laporan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#00C853"
+        app:layout_constraintTop_toTopOf="@+id/textData"
+        app:layout_constraintStart_toEndOf="@+id/textData"
+        android:layout_marginStart="4dp"/>
+
+    <!-- Ikon -->
+    <ImageView
+        android:id="@+id/iconLaporan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/report1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/deskripsiText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Anda dapat melihat riwayat laporan kondisi lingkungan dan memberi penilaian terhadap aksi pelestarian."
+        android:textSize="12sp"
+        android:textColor="#444444"
+        app:layout_constraintTop_toBottomOf="@+id/textData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Kotak Placeholder 1 -->
+    <View
+        android:id="@+id/box1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsiText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Kotak Placeholder 2 -->
+    <View
+        android:id="@+id/box2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@+id/box1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Kotak Placeholder 3 -->
+    <View
+        android:id="@+id/box3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

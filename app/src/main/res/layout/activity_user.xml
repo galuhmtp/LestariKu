@@ -48,7 +48,7 @@
                     android:id="@+id/tvLoginLink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Masuk / Daftar"
+                    android:text="Nama Akun"
                     android:textColor="#D32F2F"
                     android:textStyle="bold"
                     android:textSize="14sp" />
